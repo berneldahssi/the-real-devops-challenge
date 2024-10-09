@@ -1,0 +1,68 @@
+  Using CI config: .dive-ci
+[1mImage Source: [0mdocker://python-app
+[1mFetching image...[0m (this can take a while for large images)
+[1mAnalyzing image...[0m
+  efficiency: 99.1726 %
+  wastedBytes: 606875 bytes (607 kB)
+  userWastedPercent: 1.6999 %
+[1mInefficient Files:[0m
+Count  Wasted Space  File Path
+    2        440 kB  /etc/ssl/certs/ca-certificates.crt
+    3        126 kB  /lib/apk/db/installed
+    3         35 kB  /lib/apk/db/scripts.tar
+    2        1.7 kB  /app/index.py
+    2        1.5 kB  /etc/passwd
+    2        1.0 kB  /etc/group
+    2         549 B  /etc/shadow
+    3         500 B  /lib/apk/db/triggers
+    3         255 B  /etc/apk/world
+    2           0 B  /usr/sbin/rfkill
+    2           0 B  /usr/bin/xzcat
+    2           0 B  /usr/bin/xargs
+    2           0 B  /bin/getopt
+    2           0 B  /usr/bin/unshare
+    2           0 B  /usr/bin/unlzma
+    2           0 B  /usr/bin/strings
+    2           0 B  /usr/bin/setsid
+    2           0 B  /usr/bin/renice
+    2           0 B  /usr/bin/nsenter
+    2           0 B  /usr/bin/mesg
+    2           0 B  /usr/bin/lzma
+    2           0 B  /usr/bin/lzcat
+    2           0 B  /usr/bin/logger
+    2           0 B  /usr/bin/ipcs
+    2           0 B  /usr/bin/ipcrm
+    2           0 B  /usr/bin/hexdump
+    2           0 B  /usr/bin/fallocate
+    2           0 B  /usr/bin/find
+    2           0 B  /bin/dmesg
+    2           0 B  /usr/bin/eject
+    2           0 B  /usr/bin/cal
+    2           0 B  /usr/bin/awk
+    2           0 B  /sbin/switch_root
+    2           0 B  /sbin/swapon
+    2           0 B  /sbin/swapoff
+    2           0 B  /sbin/pivot_root
+    2           0 B  /sbin/mkswap
+    2           0 B  /sbin/losetup
+    2           0 B  /sbin/hwclock
+    2           0 B  /sbin/fstrim
+    2           0 B  /sbin/fsck
+    2           0 B  /sbin/findfs
+    2           0 B  /sbin/fdisk
+    2           0 B  /sbin/blockdev
+    2           0 B  /sbin/blkid
+    2           0 B  /bin/umount
+    2           0 B  /bin/tar
+    2           0 B  /bin/rev
+    2           0 B  /bin/mountpoint
+    2           0 B  /bin/mount
+    2           0 B  /bin/more
+    2           0 B  /usr/bin/unxz
+    2           0 B  /usr/bin/flock
+[1mResults:[0m
+  PASS: highestUserWastedPercent
+  PASS: highestWastedBytes
+  PASS: lowestEfficiency
+[32mResult:PASS [Total:3] [Passed:3] [Failed:0] [Warn:0] [Skipped:0][0m
+
