@@ -34,14 +34,14 @@ jobs:
       with:
         context: challenge-1/
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/python-webserver:latest  # Replace 'myapp' with your image name
-        file: challenge-1/Dockerfile  # Path to your Dockerfile
+        tags: ${{ secrets.DOCKER_USERNAME }}/python-app:latest
+        file: challenge-1/Dockerfile  # Path to our Dockerfile
     
     - name: Pull Docker image
-      run: docker pull ${{ secrets.DOCKER_USERNAME }}/python-webserver:latest
+      run: docker pull ${{ secrets.DOCKER_USERNAME }}/python-app:latest
   
     
     # Verify the image was pushed successfully
     - name: Image details
-      run: docker image inspect ${{ secrets.DOCKER_USERNAME }}/python-webserver:latest
+      run: docker image inspect ${{ secrets.DOCKER_USERNAME }}/python-app:latest
 
